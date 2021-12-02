@@ -27,21 +27,22 @@
         <div class="main_form">
             <form action="list" method="post">
                 <div class="main_list-label">
-                    <label >Sorted items</label>
+                    <label>Sorted items</label>
                 </div>
                 <div>
-                <button class="main_form-button" type="submit">OrderList</button>
+                    <button class="main_form-button" type="submit">OrderList</button>
                 </div>
             </form>
         </div>
-
-        <div class="main_list">
-            <c:forEach var="sortList" items="${sortList}">
-                <div>
-                        ${sortList}
-                </div>
-            </c:forEach>
-        </div>
+        <c:if test="${sortList != null}">
+            <div class="main_list">
+                <c:forEach var="sortList" items="${sortList}">
+                    <div>
+                            ${sortList}
+                    </div>
+                </c:forEach>
+            </div>
+        </c:if>
     </div>
 </div>
 </body>
