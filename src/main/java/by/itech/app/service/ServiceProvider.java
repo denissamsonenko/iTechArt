@@ -1,6 +1,6 @@
-package by.itech.app.controller.service;
+package by.itech.app.service;
 
-import by.itech.app.controller.service.impl.MainServiceImpl;
+import by.itech.app.service.impl.MainServiceImpl;
 
 public class ServiceProvider {
     private static ServiceProvider instance;

@@ -1,6 +1,6 @@
-package by.itech.app.controller.service.impl;
+package by.itech.app.service.impl;
 
-import by.itech.app.controller.service.MainService;
+import by.itech.app.service.MainService;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

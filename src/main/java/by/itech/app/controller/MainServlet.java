@@ -1,14 +1,13 @@
 package by.itech.app.controller;
 
-import by.itech.app.controller.service.MainService;
-import by.itech.app.controller.service.ServiceProvider;
+import by.itech.app.service.MainService;
+import by.itech.app.service.ServiceProvider;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

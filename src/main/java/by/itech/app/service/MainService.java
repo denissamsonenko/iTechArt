@@ -1,4 +1,4 @@
-package by.itech.app.controller.service;
+package by.itech.app.service;
 
 import java.util.List;
 
