@@ -14,7 +14,7 @@ public class ServiceProvider {
         return mainService;
     }
 
-    public static ServiceProvider getInstance(){
+    public static ServiceProvider getInstance() {
         if (instance == null) {
             instance = new ServiceProvider();
         }

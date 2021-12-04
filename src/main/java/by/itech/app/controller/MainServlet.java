@@ -18,6 +18,7 @@ public class MainServlet extends HttpServlet {
         MainService ms = ServiceProvider.getInstance().getMainService();
 
         req.setAttribute("list", ms.getListNumber());
+
         req.getRequestDispatcher("/jsp/main.jsp").forward(req, resp);
     }
 
@@ -25,13 +26,12 @@ public class MainServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         MainService ms = ServiceProvider.getInstance().getMainService();
 
-        req.setAttribute("list", ms.getListNumber());
-
         List<String> sortedList = ms.getListNumber();
-
         Collections.sort(sortedList);
 
+        req.setAttribute("list", ms.getListNumber());
         req.setAttribute("sortList", sortedList);
+
         req.getRequestDispatcher("/jsp/main.jsp").forward(req, resp);
     }
 }
